@@ -1,0 +1,53 @@
+:root {
+  /* Palette: https://www.colorhexa.com/666999 */
+  --haze-color-darkbluegray: #666999;
+  --haze-color-beaver: #997d66;
+  --haze-color-darkgray: #333333;
+}
+
+body {
+  background-color: var(--haze-color-darkgray);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topbar {
+  background-color: var(--haze-color-darkbluegray);
+  display: flex;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+#logo {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 10%;
+}
+
+.navbar-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 10%;
+  font-family: 'Barlow', sans-serif;
+}
+
+.navbar-items a {
+  text-decoration: none;
+  color: white;
+}
+
+#userspace {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
+
+#shopping-cart-button {}
