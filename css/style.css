@@ -1,19 +1,22 @@
 :root {
   /* Palette: https://www.colorhexa.com/666999 */
-  --haze-color-darkbluegray: #666999;
-  --haze-color-beaver: #997d66;
-  --haze-color-darkgray: #333333;
+  --haze-color-base00: #666999;
+  --haze-color-base01: #b8a494;
+  --haze-color-light: #efebe7;
+  --haze-color-dark: #333333;
+
+  --haze-font-fam: 'Barlow', sans-serif;
 }
 
 body {
-  background-color: var(--haze-color-darkgray);
+  background-color: var(--haze-color-dark);
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .topbar {
-  background-color: var(--haze-color-darkbluegray);
+  background-color: var(--haze-color-base00);
   display: flex;
   padding-left: 2%;
   padding-right: 2%;
@@ -22,32 +25,110 @@ body {
 #logo {
   display: flex;
   justify-content: flex-start;
+  width: auto;
 }
 
 .navbar {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-right: 10%;
+  margin-right: 5%;
 }
 
-.navbar-items {
+.navbar-item {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-left: 10%;
-  font-family: 'Barlow', sans-serif;
+  font-size: 1.5rem;
+  font-family: var(--haze-font-fam);
 }
 
-.navbar-items a {
+.navbar-item a {
   text-decoration: none;
   color: white;
 }
 
+#search-area {
+  display: flex;
+  background-color: var(--haze-color-light);
+  align-self: center;
+  align-items: center;
+  justify-items: center;
+  border: 5px solid var(--haze-color-base01);
+  border-radius: 30px;
+  margin-left: 10vw;
+  margin-right: 5%;
+  width: 100%;
+  height: 2.5rem;
+}
+
+#search-bar {
+  display: flex;
+  background-color: transparent;
+  align-self: stretch;
+  border: 0;
+  outline: 0;
+  font-size: 20px;
+  font-family: var(--haze-font-fam);
+  padding-left: 10px;
+  width: 95%;
+}
+
+#search-icon {
+  color: var(--haze-color-base01);
+  text-align: right;
+  font-size: 30px;
+}
+
 #userspace {
   display: flex;
-  width: 100%;
   justify-content: end;
 }
 
-#shopping-cart-button {}
+#userspace img {
+  padding: 10px;
+  max-width: 54px;
+}
+
+#featured {
+  display: flex;
+  justify-content: center;
+}
+
+.featured-item {
+  display: flex;
+  background-color: var(--haze-color-base00);
+  color: white;
+  border: white solid 5px;
+  border-radius: 20px;
+  border-color: var(--haze-color-light);
+  margin-top: 25px;
+  width: 50vw;
+  height: 40vh;
+}
+
+.game-tags {
+  display: inline-flex;
+  background-color: var(--haze-color-dark);
+  border-radius: 5px;
+  padding: 5px;
+  font-size: medium;
+  font-family: var(--haze-font-fam);
+}
+
+.feature-item img {
+  display: flex;
+}
+
+.featured-desc {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: var(--haze-font-fam);
+}
+
+.featured-desc h2 {
+  font-size: 45px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

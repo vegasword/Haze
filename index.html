@@ -4,10 +4,12 @@
 <head>
   <meta charset="utf-8">
   <title>Haze | Homepage</title>
+  <meta http-equiv="X-UA Compatible" cotnent="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -18,30 +20,48 @@
     </div>
 
     <div class="navbar">
-      <div class="navbar-items">
-        <a href="a">STORE</a>
+      <div class="navbar-item">
+        <a href="#" title="Store">STORE</a>
       </div>
-      <div class="navbar-items">
-        <a href="b">COMMUNITY</a>
+      <div class="navbar-item">
+        <a href="#" title="Community">COMMUNITY</a>
       </div>
-      <div class="navbar-items">
-        <a href="c">ABOUT</a>
+      <div class="navbar-item">
+        <a href="#" title="About">ABOUT</a>
       </div>
+    </div>
+
+    <div id="search-area">
+      <input type="text" placeholder="Find your next game" id="search-bar">
+      <a href="#" title="Search" id="search-icon"><i class="fa fa-search"></i></a>
     </div>
 
     <div id="userspace">
+      <img src="images/shopping-cart.png" alt="User picture"></img>
       <img src="images/user.png" alt="User picture"></img>
     </div>
-
-
   </div>
 
   <main>
-    <div class="featured">
-      <img src="" alt="Game footage"></img>
-      <div class="featured_description">
-        <h2>This is a game</h2>
-        <p>Yup that's the best game ever!</p>
+    <!-- This might be changed by a back-end API -->
+    <!-- TODO: Carousel feature using JS idk...  -->
+    <div id="featured">
+      <div class="featured-item">
+        <!-- Nice website to get covers: https://www.mobygames.com/ -->
+        <img src="images/featured00.png" alt="Featured game cover"></img>
+        <div class="featured-desc">
+          <h2>Watch Dogs</h2>
+          <div class="game-tags">Action</div>
+          <div class="game-tags">Open world</div>
+          <div class="game-tags">Hacking</div>
+          <p>Set in Chicago, where a central network of computers connects everyone and everything, Watch_Dogs explores
+            the impact of technology within our society.</p>
+          <p>You play as Aiden Pearce, a brilliant hacker and former thug, whose criminal past led to a violent family
+            tragedy. Now on the hunt for those who hurt your family, you'll be able to monitor and hack all who surround
+            you by manipulating everything connected to the city’s network. Access omnipresent security cameras,
+            download personal information to locate a target, control traffic lights and public transportation to stop
+            the enemy... and more.</p>
+        </div>
       </div>
     </div>
 
