@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Haze | Homepage</title>
+  <meta http-equiv="X-UA Compatible" cotnent="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="topbar">
+    <div id="logo">
+      <img src="images/assets/logo.webp" alt="Haze logo"></img>
+    </div>
+
+    <div class="navbar">
+      <div class="navbar-item">
+        <a href="#" title="Store">STORE</a>
+      </div>
+      <div class="navbar-item">
+        <a href="#" title="Community">COMMUNITY</a>
+      </div>
+      <div class="navbar-item">
+        <a href="#" title="About">ABOUT</a>
+      </div>
+    </div>
+
+    <div id="search-area">
+      <input type="text" placeholder="Find your next game" id="search-bar">
+      <a href="#" title="Search" id="search-icon"><i class="fa fa-search"></i></a>
+    </div>
+
+    <div id="userspace">
+      <img src="images/assets/shopping_cart.webp" alt="Shopping cart"></img>
+      <img src="images/assets/default_profile_picture.webp" alt="Profile picture"></img>
+    </div>
+  </div>
+
+  <main>
+    <!-- Nice website to get covers: https://www.mobygames.com/ -->
+    <div id="featured">
+      <div class="featured-button">
+        <button onclick="onLeftFeaturedBtnClick()" id="featured-button-left">
+          <i class="fa fa-arrow-left"></i>
+        </button>
+      </div>
+      <div class="featured-item">
+        <img id="featured-cover" alt="Featured game cover"></img>
+        <div id="featured-pannel">
+          <h2 id="featured-title"></h2>
+          <div id="featured-game-tags-container"></div>
+          <p id="featured-desc"></p>
+        </div>
+      </div>
+      <div class="featured-button">
+        <button onclick="onRightFeaturedBtnClick()" id="featured-button-right">
+          <i class="fa fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <div>
+      <h3>Browse by category</h3>
+      <div class="game-category"></div>
+    </div>
+
+    <div>
+      <div class="new-and-trendy">New & trendy</div>
+      <div class="top-sellers">Top sellers</div>
+      <div class="popular-incoming">Popular incoming</div>
+      <div class="game-container"></div>
+      <a class="game-container-item" href="">Yup</a>
+      <a class="game-container-item" href="">Yup</a>
+      <a class="game-container-item" href="">Yup</a>
+      <a class="game-container-item" href="">Yup</a>
+    </div>
+  </main>
+
+  <footer>
+    <img src="" alt="Instagram"></img>
+    <img src="" alt="Twitter"></img>
+    <a href="">Terms of Service</a>
+    <a href="">Privacy Policy</a>
+    <a href="">Cookies</a>
+    <a href="">About Haze</a>
+  </footer>
+
+  <script src="js/featured.js"></script>
+</body>
+
+</html>
