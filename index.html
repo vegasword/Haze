@@ -13,13 +13,13 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body onresize="centerNavbar()">
   <div class="topbar">
     <div id="logo">
       <img src="images/assets/logo.webp" alt="Haze logo"></img>
     </div>
 
-    <div class="navbar">
+    <div id="navbar">
       <div class="navbar-item">
         <a href="#" title="Store">STORE</a>
       </div>
@@ -29,11 +29,11 @@
       <div class="navbar-item">
         <a href="#" title="About">ABOUT</a>
       </div>
-    </div>
 
-    <div id="search-area">
-      <input type="text" placeholder="Find your next game" id="search-bar">
-      <a href="#" title="Search" id="search-icon"><i class="fa fa-search"></i></a>
+      <div id="search-area">
+        <input type="text" placeholder="Find your next game" id="search-bar">
+        <a href="#" title="Search" id="search-icon"><i class="fa fa-search"></i></a>
+      </div>
     </div>
 
     <div id="userspace">
@@ -92,6 +92,7 @@
   </footer>
 
   <script src="js/featured.js"></script>
+  <script src="js/style.js"></script>
 </body>
 
 </html>

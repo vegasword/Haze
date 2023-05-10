@@ -15,30 +15,26 @@ body {
 }
 
 .topbar {
-  background-color: var(--haze-color-base00);
   display: flex;
-  padding-left: 2%;
-  padding-right: 2%;
+  justify-content: space-between;
+  background-color: var(--haze-color-base00);
   width: 100%;
 }
 
 #logo {
   display: flex;
-  justify-content: flex-start;
-  width: auto;
+  margin-left: 2%;
+  align-self: center;
 }
 
-.navbar {
+#navbar {
   display: flex;
   align-items: center;
   justify-items: center;
-  margin-right: 5%;
-  width: 100%;
 }
 
 .navbar-item {
   display: flex;
-  flex-direction: row;
   padding: 10px;
   font-size: 25px;
   font-family: var(--haze-font-fam);
@@ -51,12 +47,9 @@ body {
 
 #search-area {
   display: flex;
-  justify-content: center;
-  align-self: center;
   background-color: var(--haze-color-light);
   border: 5px solid var(--haze-color-base01);
   border-radius: 30px;
-  width: 400px;
   height: 2.5rem;
 }
 
@@ -67,19 +60,22 @@ body {
   outline: 0;
   font-size: 20px;
   font-family: var(--haze-font-fam);
+  padding-left: 10px;
 }
 
 #search-icon {
+  display: flex;
   color: var(--haze-color-base01);
-  justify-self: right;
+  align-self: center;
   text-align: right;
+  text-decoration: none;
   font-size: 30px;
   padding-right: 10px;
 }
 
 #userspace {
   display: flex;
-  justify-content: end;
+  margin-right: 2%;
 }
 
 #userspace img {
