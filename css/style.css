@@ -19,6 +19,7 @@ body {
   display: flex;
   padding-left: 2%;
   padding-right: 2%;
+  width: 100%;
 }
 
 #logo {
@@ -29,17 +30,17 @@ body {
 
 .navbar {
   display: flex;
-  flex-direction: row;
   align-items: center;
+  justify-items: center;
   margin-right: 5%;
+  width: 100%;
 }
 
 .navbar-item {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  margin-left: 10%;
-  font-size: 1.5rem;
+  padding: 10px;
+  font-size: 25px;
   font-family: var(--haze-font-fam);
 }
 
@@ -50,32 +51,27 @@ body {
 
 #search-area {
   display: flex;
-  background-color: var(--haze-color-light);
+  justify-content: center;
   align-self: center;
-  align-items: center;
-  justify-items: center;
+  background-color: var(--haze-color-light);
   border: 5px solid var(--haze-color-base01);
   border-radius: 30px;
-  margin-left: 10vw;
-  margin-right: 5%;
-  width: 100%;
+  width: 400px;
   height: 2.5rem;
 }
 
 #search-bar {
   display: flex;
   background-color: transparent;
-  align-self: stretch;
   border: 0;
   outline: 0;
   font-size: 20px;
   font-family: var(--haze-font-fam);
-  padding-left: 10px;
-  width: 95%;
 }
 
 #search-icon {
   color: var(--haze-color-base01);
+  justify-self: right;
   text-align: right;
   font-size: 30px;
   padding-right: 10px;
