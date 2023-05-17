@@ -1,7 +1,17 @@
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../fonts/Barlow.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 :root {
   /* Palette: https://www.colorhexa.com/666999 */
-  --haze-color-base00: #666999;
-  --haze-color-base01: #b8a494;
+  --haze-color-darkbluegray: #666999;
+  --haze-color-tuscany: #b8a494;
+  --haze-color-green: #699966;
   --haze-color-light: #efebe7;
   --haze-color-dark: #333333;
   --haze-font-fam: 'Barlow', sans-serif;
@@ -17,7 +27,7 @@ body {
 .topbar {
   display: flex;
   justify-content: space-between;
-  background-color: var(--haze-color-base00);
+  background-color: var(--haze-color-darkbluegray);
   width: 100%;
 }
 
@@ -48,7 +58,7 @@ body {
 #search-area {
   display: flex;
   background-color: var(--haze-color-light);
-  border: 5px solid var(--haze-color-base01);
+  border: 5px solid var(--haze-color-tuscany);
   border-radius: 30px;
   height: 2.5rem;
 }
@@ -65,7 +75,7 @@ body {
 
 #search-icon {
   display: flex;
-  color: var(--haze-color-base01);
+  color: var(--haze-color-tuscany);
   align-self: center;
   text-align: right;
   text-decoration: none;
@@ -94,7 +104,7 @@ body {
 }
 
 .featured-button button {
-  background-color: var(--haze-color-base01);
+  background-color: var(--haze-color-tuscany);
   color: white;
   border: solid 4px white;
   font-size: 50px;
@@ -116,7 +126,7 @@ body {
 
 .featured-item {
   display: flex;
-  background-color: var(--haze-color-base00);
+  background-color: var(--haze-color-darkbluegray);
   color: white;
   border: white solid 5px;
   border-color: var(--haze-color-light);
@@ -153,4 +163,19 @@ body {
 
 .game-tags:first-child {
   margin-left: 0;
+}
+
+.buy-button {
+  display: flex;
+  justify-content: right;
+  color: var(--haze-color-light);
+}
+
+.buy-button button {
+  background-color: var(--haze-color-green);
+}
+
+#featured-buy-button {
+  border: solid 4px white;
+  font-size: 40px;
 }
