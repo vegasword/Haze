@@ -6,11 +6,8 @@
   <title>Haze | Homepage</title>
   <meta http-equiv="X-UA Compatible" cotnent="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body onresize="centerNavbar()">
@@ -56,6 +53,9 @@
           <h2 id="featured-title"></h2>
           <div id="featured-game-tags-container"></div>
           <p id="featured-desc"></p>
+          <div class="buy-button">
+            <button href="#" id="featured-buy-button">#,##$</button>
+          </div>
         </div>
       </div>
       <div class="featured-button">
@@ -65,7 +65,7 @@
       </div>
     </div>
 
-    <div>
+    <div id="browse-by-category">
       <h3>Browse by category</h3>
       <div class="game-category"></div>
     </div>
