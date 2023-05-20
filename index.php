@@ -7,12 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/featured.js"></script>
-  <script src="js/style.js"></script>
   <title>Haze | Homepage</title>
 </head>
 
 <body onresize="centerNavbar()">
+  <?php include 'src/init.php' ?>
   <div class="topbar">
     <div id="logo">
       <img src="images/assets/logo.webp" alt="Haze logo"></img>
@@ -42,48 +41,28 @@
   </div>
 
   <main>
-    <!-- Nice website to get covers: https://www.mobygames.com/ -->
     <div id="featured">
       <div class="featured-button">
-        <button onclick="onLeftFeaturedBtnClick()" id="featured-button-left">
+        <button id="featured-button-left" onclick="moveSlides(-1)">
           <i class="fa fa-arrow-left"></i>
         </button>
       </div>
-      <div class="featured-item">
-        <img id="featured-cover" alt="Featured game cover"></img>
-        <div id="featured-pannel">
-          <h2 id="featured-title"></h2>
-          <div id="featured-game-tags-container"></div>
-          <p id="featured-desc"></p>
-          <div class="buy-button">
-            <button href="#" id="featured-buy-button">#,##$</button>
-          </div>
-        </div>
-      </div>
+      <?php include 'src/featured.php'?>
       <div class="featured-button">
-        <button onclick="onRightFeaturedBtnClick()" id="featured-button-right">
+        <button id="featured-button-right" onclick="moveSlides(1)">
           <i class="fa fa-arrow-right"></i>
         </button>
       </div>
     </div>
 
-    <div id="browse-by-category">
-      <h3>Browse by category</h3>
-      <div class="game-category"></div>
+    <div id="browse">
+      <div class="browse-games-category">TOP SELLERS</div> <!-- 6 items per category -->
+      <?php include 'src/topsellers.php' ?>
     </div>
 
-    <div>
-      <div class="new-and-trendy">New & trendy</div>
-      <div class="top-sellers">Top sellers</div>
-      <div class="popular-incoming">Popular incoming</div>
-      <div class="game-container"></div>
-      <a class="game-container-item" href="">Yup</a>
-      <a class="game-container-item" href="">Yup</a>
-      <a class="game-container-item" href="">Yup</a>
-      <a class="game-container-item" href="">Yup</a>
-    </div>
   </main>
 
+  <!-- TODO
   <footer>
     <img src="" alt="Instagram"></img>
     <img src="" alt="Twitter"></img>
@@ -92,6 +71,9 @@
     <a href="">Cookies</a>
     <a href="">About Haze</a>
   </footer>
+  -->
+  <script type="text/javascript" src="js/featured.js"></script>
+  <script type="text/javascript" src="js/style.js"></script>
 </body>
 
 </html>
