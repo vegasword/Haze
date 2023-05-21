@@ -7,10 +7,10 @@ foreach ($topsellers as $t)
   <img src="images/headers/<?=$t['gameAssetsFileName']?>.jpg" alt=""></img>
   <div class="top-sellers-meta">
     <h3><?=$t['gameTitle']?></h3>
-    <div class="game-tags-container" style="color: white; justify-content: center; text-decoration: none;">
+    <div class="game-tags-container" style="justify-content: space-evenly;">
 <?php
   $gameTags = explode(';', $t['gameTags']);
-  foreach ($gameTags as $gt) echo('<div class="game-tags">'.$gt.'</div>');
+  foreach ($gameTags as $gt) echo('<div>'.$gt.'</div>');
 ?>
     </div>
   </div>

@@ -166,6 +166,16 @@ body {
   display: flex;
 }
 
+.game-tags-container div {
+  background-color: var(--haze-color-darkbluegray);
+  color: white;
+  border-radius: 7px;
+  padding: 3px;
+  text-decoration: none;
+  font-size: medium;
+  font-family: var(--haze-font-fam);
+}
+
 .game-tags {
   background-color: var(--haze-color-dark);
   border-radius: 7px;
@@ -176,7 +186,7 @@ body {
 }
 
 .game-tags div :first {
-  margin-left: 0;
+  margin: 0;
 }
 
 .featured-footer {
