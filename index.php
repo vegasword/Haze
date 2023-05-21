@@ -18,16 +18,9 @@
     </div>
 
     <div id="navbar">
-      <div class="navbar-item">
-        <a href="#" title="Store">STORE</a>
-      </div>
-      <div class="navbar-item">
-        <a href="#" title="Community">COMMUNITY</a>
-      </div>
-      <div class="navbar-item">
-        <a href="#" title="About">ABOUT</a>
-      </div>
-
+      <div class="navbar-item"><a href="#" title="Store">STORE</a></div>
+      <div class="navbar-item"><a href="#" title="Community">COMMUNITY</a></div>
+      <div class="navbar-item"><a href="#" title="About">ABOUT</a></div>
       <div id="search-area">
         <input type="text" placeholder="Find your next game" id="search-bar">
         <a href="#" title="Search" id="search-icon"><i class="fa fa-search"></i></a>
@@ -56,7 +49,7 @@
     </div>
 
     <div id="browse">
-      <div class="browse-games-category">TOP SELLERS</div> <!-- 6 items per category -->
+      <div class="browse-category">TOP SELLERS</div>
       <?php include 'src/topsellers.php' ?>
     </div>
 

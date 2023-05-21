@@ -226,48 +226,48 @@ body {
   font-family: var(--haze-font-fam);
 }
 
-.browse-games-category {
+.browse-category {
   text-align: center;
   font-size: 50px;
 }
 
-.browse-games-row {
+.top-sellers-row {
   display: flex;
   justify-content: space-around;
   margin: auto 20%;
 }
 
-.browse-games-row a {
+.top-sellers-row a {
   margin-top: 10px;
   text-decoration: none;
 }
 
-.browse-games-col {
+.top-sellers-col {
   max-width: 25%;
   border: solid var(--haze-color-tuscany);
   box-shadow: 0px 0px 5px 5px var(--haze-color-bluegray);
 }
 
-.browse-games-col img {
+.top-sellers-col img {
   border-bottom: solid var(--haze-color-light);
   width: 100%;
 }
 
-.browse-games-meta {
+.top-sellers-meta {
   display: flex;
   flex-direction: column;
   justify-self: center;
   justify-content: space-evenly;
 }
 
-.browse-games-meta h3 {
+.top-sellers-meta h3 {
   color: var(--haze-color-light);
   text-align: center;
   font-size: 20px;
   margin: 0;
 }
 
-.browse-games-meta p {
+.top-sellers-meta p {
   color: var(--haze-color-tuscany);
   text-align: center;
   font-size: 18px;
