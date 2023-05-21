@@ -51,6 +51,46 @@
     <div id="browse">
       <div class="browse-category">TOP SELLERS</div>
       <?php include 'src/topsellers.php' ?>
+      <div class="browse-category">BROWSE LATEST GAMES</div>
+      <!-- TODO: Wrap this code in a php file -->
+      <div class="browse-container">
+        <div class="browse-search">
+          <h3>Search by genres</h3>
+          <div class="browse-by-tags">
+            <!-- TODO: Replace by a checkboxes field and a submit button
+                       making a proper AJAX to php query -->
+            <span href="#">Action</span>
+            <span href="#">Action</span>
+            <span href="#">Action</span>
+            <span href="#">Action</span>
+            <span href="#">Action</span>
+          </div>
+        </div>
+        <div class="browse-item-container">
+          <a href="#" class="browse-item">
+            <img src="images/headers/doom4.jpg"></img>
+            <div class="browse-item-meta">
+              <h3>Game title</h3>
+              <div class="game-tags-container">
+                <div class="game-tags">De ouf</div>
+                <div class="game-tags">Ah oe grv</div>           
+              </div>
+            </div>
+            <div class="browse-item-price">X,XX$</div>
+          </a>
+          <a href="#" class="browse-item">
+            <img src="images/headers/doom4.jpg"></img>
+            <div class="browse-item-meta">
+              <h3>Game title</h3>
+              <div class="game-tags-container">
+                <div class="game-tags">De ouf</div>
+                <div class="game-tags">Ah oe grv</div>           
+              </div>
+            </div>
+            <div class="browse-item-price">X,XX$</div>
+          </a>
+        </div>
+      </div>
     </div>
 
   </main>
