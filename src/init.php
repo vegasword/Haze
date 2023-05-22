@@ -9,4 +9,7 @@ $featured = $featuredStatement->fetchAll();
 $topsellersStatement = $hazeDb->prepare('SELECT * from topsellers t JOIN games g ON (t.gameId=g.gameId)');
 $topsellersStatement->execute();
 $topsellers = $topsellersStatement->fetchAll();
+$gameTagsStatement = $hazeDb->prepare('SELECT * from gametags');
+$gameTagsStatement->execute();
+$gameTags = $gameTagsStatement->fetchAll();
 ?>

@@ -57,39 +57,14 @@
         <div class="browse-search">
           <h3>Search by genres</h3>
           <div class="browse-by-tags">
-            <!-- TODO: Replace by a checkboxes field and a submit button
-                       making a proper AJAX to php query -->
-            <span href="#">Action</span>
-            <span href="#">Action</span>
-            <span href="#">Action</span>
-            <span href="#">Action</span>
-            <span href="#">Action</span>
+            <form>
+              <label><input type="checkbox" class="category" name="category[]" value="action">Action</label>
+              <label><input type="checkbox" class="category" name="category[]" value="gore">Gore</label>
+            </form>
+            <div id="search-results"></div>
           </div>
         </div>
-        <div class="browse-item-container">
-          <a href="#" class="browse-item">
-            <img src="images/headers/doom4.jpg"></img>
-            <div class="browse-item-meta">
-              <h3>Game title</h3>
-              <div class="game-tags-container">
-                <div class="game-tags">De ouf</div>
-                <div class="game-tags">Ah oe grv</div>           
-              </div>
-            </div>
-            <div class="browse-item-price">X,XX$</div>
-          </a>
-          <a href="#" class="browse-item">
-            <img src="images/headers/doom4.jpg"></img>
-            <div class="browse-item-meta">
-              <h3>Game title</h3>
-              <div class="game-tags-container">
-                <div class="game-tags">De ouf</div>
-                <div class="game-tags">Ah oe grv</div>           
-              </div>
-            </div>
-            <div class="browse-item-price">X,XX$</div>
-          </a>
-        </div>
+        <div class="browse-item-container" id="search-results"></div>
       </div>
     </div>
 
@@ -105,6 +80,39 @@
     <a href="">About Haze</a>
   </footer>
   -->
+  <script src="css/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Listen for changes in the form inputs
+      $('#query, .category').on('change', function() {
+        // Trigger the search process
+        performSearch();
+      });
+
+      function performSearch() {
+        // Retrieve the search query and categories from the form inputs
+        var query = $('#query').val();
+        var categories = $('.category:checked').map(function() {
+          return this.value;
+        }).get();
+
+        // Perform the search operation using the provided criteria
+        // Make an AJAX request to your PHP backend with the search criteria
+        $.ajax({
+          url: 'src/search.php',
+          method: 'POST',
+          data: {
+            query: query,
+            category: categories
+          },
+          success: function(response) {
+            // Display the search results
+            $('#search-results').html(response);
+          }
+        });
+      }
+    });
+  </script>
   <script type="text/javascript" src="js/featured.js"></script>
   <script type="text/javascript" src="js/style.js"></script>
 </body>

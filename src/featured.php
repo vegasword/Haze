@@ -6,8 +6,9 @@
       <h2 class="featured-title"><?=$f['gameTitle']?></h2>
       <div class="game-tags-container">
         <?php
-          $gameTags = explode(';', $f['gameTags']);
-          foreach ($gameTags as $gt) echo('<div class="game-tags">'.$gt.'</div>');
+          $tags = explode(';', $f['gameTags']);
+          $tagsIndexes = array_map('intval', $tags);
+          foreach ($tagsIndexes as $t) echo('<div class="game-tags">'.$gameTags[$t].'</div>');
         ?>
       </div>
       <p class="featured-description"><?= $f['gameDescription'] ?></p>
