@@ -227,7 +227,6 @@ body {
   justify-content: center;
   background-color: var(--haze-color-green);
   border-radius: 0 5px 5px 0;
-  padding-right: 10px;
   width: 90px;
   height: 30px;
 }
@@ -238,7 +237,6 @@ body {
 }
 
 #browse {
-  justify-content: center;
   background: linear-gradient(90deg,
       var(--haze-color-tuscany) 0%,
       var(--haze-color-bluegray) 5%,
@@ -309,7 +307,7 @@ body {
 .browse-container {
   display: flex;
   align-items: flex-start;
-  margin: auto 20%;
+  margin: auto 25%;
   min-height: 700px;
   max-height: 1200px;
 }
@@ -384,16 +382,18 @@ body {
 
 .browse-item-price {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   background-color: var(--haze-color-green);
   border-radius: 5px;
-  margin: 3px;
+  margin: 5px;
   padding: 5px;
+  width: 64px;
 }
 
 footer {
   display: flex;
+
 }
 
 .footer-distributed {

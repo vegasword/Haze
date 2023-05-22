@@ -90,7 +90,7 @@
     <div class="footer-right">
       <p class="footer-company-about">
         <span>About the company</span>
-        Haze is a game store designed for passionate and nostalgic gamers who love classic games.
+        Haze is a game store designed for passionate and nostalgic gamers who love games that have shaped the industry.
       </p>
       <div class="footer-icons"> 
         <a href="#"><i class="fa fa-facebook"></i></a>
