@@ -11,9 +11,9 @@ foreach ($topsellers as $ts)
     <div class="game-tags-container" style="overflow: hidden; justify-content: space-evenly;">
 <?php
   $tags = explode(';', $ts['gameTags']);
-  $tagsIndexes = array_map('intval', $tags);
-  print_r($tagsIndexes);
-  foreach ($tagsIndexes as $t) echo('<div>'.$gameTags[$t].'</div>');
+  $tagsIndices = array_map('intval', $tags);
+  foreach(array_values($tagsIndices) as $t)
+    echo('<div>'.$gameTags[$t-1]['tags'].'</div>');  
 ?>
     </div>
   </div>

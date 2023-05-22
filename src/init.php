@@ -2,7 +2,7 @@
 $hazeDb = new PDO(
         'mysql:host=localhost;dbname=haze;charset=utf8',
         'root', 'root', [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
-    );
+);
 $featuredStatement = $hazeDb->prepare('SELECT * from featured f JOIN games g ON (f.gameId=g.gameId)');
 $featuredStatement->execute();
 $featured = $featuredStatement->fetchAll();

@@ -52,20 +52,18 @@
       <div class="browse-category">TOP SELLERS</div>
       <?php include 'src/topsellers.php' ?>
       <div class="browse-category">BROWSE LATEST GAMES</div>
-      <!-- TODO: Wrap this code in a php file -->
       <div class="browse-container">
         <div class="browse-search">
-          <h3>Search by genres</h3>
+          <h3>Search by tags</h3>
           <div class="browse-by-tags">
             <form>
-              <label><input type="checkbox" class="category" name="category[]" value="action">Action</label>
-              <label><input type="checkbox" class="category" name="category[]" value="gore">Gore</label>
+              <?php include 'src/gametags.php'?>
             </form>
-            <div id="search-results"></div>
           </div>
         </div>
         <div class="browse-item-container" id="search-results"></div>
       </div>
+      <div class="browse-item-container" id="search-results"></div>
     </div>
 
   </main>
@@ -81,38 +79,7 @@
   </footer>
   -->
   <script src="css/jquery-3.6.0.min.js"></script>
-  <script>
-    $(document).ready(function() {
-      // Listen for changes in the form inputs
-      $('#query, .category').on('change', function() {
-        // Trigger the search process
-        performSearch();
-      });
-
-      function performSearch() {
-        // Retrieve the search query and categories from the form inputs
-        var query = $('#query').val();
-        var categories = $('.category:checked').map(function() {
-          return this.value;
-        }).get();
-
-        // Perform the search operation using the provided criteria
-        // Make an AJAX request to your PHP backend with the search criteria
-        $.ajax({
-          url: 'src/search.php',
-          method: 'POST',
-          data: {
-            query: query,
-            category: categories
-          },
-          success: function(response) {
-            // Display the search results
-            $('#search-results').html(response);
-          }
-        });
-      }
-    });
-  </script>
+  <script tpye="text/javascript" src="js/search-by-tags.js"></script>
   <script type="text/javascript" src="js/featured.js"></script>
   <script type="text/javascript" src="js/style.js"></script>
 </body>
