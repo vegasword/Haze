@@ -43,7 +43,7 @@ if (!empty($queryTags)) {
     }
 }
 else {
-    $gamesStatement = $hazeDb->prepare('SELECT * FROM games ORDER BY RAND() LIMIT 5');
+    $gamesStatement = $hazeDb->prepare('SELECT * FROM games ORDER BY RAND() LIMIT 10');
     $gamesStatement->execute();
     $games = $gamesStatement->fetchAll();
     foreach ($games as $g) {
