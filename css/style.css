@@ -175,6 +175,7 @@ body {
 
 .game-tags-container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .game-tags-container div {
@@ -308,8 +309,8 @@ body {
   display: flex;
   align-items: flex-start;
   margin: auto 25%;
-  min-height: 700px;
-  max-height: 1200px;
+  min-height: 1200px;
+  max-height: 1700px;
 }
 
 .browse-search {

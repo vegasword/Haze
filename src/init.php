@@ -6,7 +6,7 @@ $hazeDb = new PDO(
 $featuredStatement = $hazeDb->prepare('SELECT * FROM games ORDER BY RAND() LIMIT 6');
 $featuredStatement->execute();
 $featured = $featuredStatement->fetchAll();
-$topsellersStatement = $hazeDb->prepare('SELECT * FROM games ORDER BY RAND() LIMIT 9');
+$topsellersStatement = $hazeDb->prepare('SELECT * FROM games ORDER BY RAND() LIMIT 5');
 $topsellersStatement->execute();
 $topsellers = $topsellersStatement->fetchAll();
 $gameTagsStatement = $hazeDb->prepare('SELECT * FROM gametags');
